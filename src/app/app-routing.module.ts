@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './appComponents/page-not-found/page-not-found.component';
 import { LoginComponent } from './appComponents/login/login.component';
-import { HeaderComponent } from './appComponents/header/header.component';
+import { ShellComponent } from './appComponents/header/shell.component';
 import { MainComponent } from './appComponents/main/main.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HeaderComponent,
+    component: ShellComponent,
     children: [
       {
         path: 'home',
