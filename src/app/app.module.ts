@@ -11,10 +11,20 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { environment } from '../environments/environment';
+import { PageNotFoundComponent } from './appComponents/page-not-found/page-not-found.component';
+import { LoginComponent } from './appComponents/login/login.component';
+import { HeaderComponent } from './appComponents/header/header.component';
+import { MainComponent } from './appComponents/main/main.component';
+import { MdToHtmlPipe } from './pipes/md-to-html.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    LoginComponent,
+    HeaderComponent,
+    MainComponent,
+    MdToHtmlPipe
   ],
   imports: [
     BrowserModule,
